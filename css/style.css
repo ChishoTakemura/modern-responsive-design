@@ -122,3 +122,121 @@ main#home h1 {
   -webkit-transform: rotate(-45deg) translate(7px, -6px);
           transform: rotate(-45deg) translate(7px, -6px);
 }
+
+.menu {
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+.menu.show {
+  visibility: visible;
+}
+
+.menu-branding, .menu-nav {
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+          flex-flow: column wrap;
+  float: left;
+  height: 100vh;
+          justify-content: center;
+  overflow: hiden;
+  width: 50%;
+}
+
+.menu-nav {
+  -webkit-transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.5s ease-out;
+  background: #1f1f1f;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+          transform: translate3d(0, -100%, 0);
+  transition: all 0.5s ease-out;
+}
+
+.menu-nav.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu-branding {
+  -webkit-transform: translate3d(0, 100%, 0);
+  -webkit-transition: all 0.5s ease-out;
+  background: #202020;
+          transform: translate3d(0, 100%, 0);
+  transition: all 0.5s ease-out;
+}
+
+.menu-branding.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu-branding .portrait {
+  background: url("../img/portrait.jpg");
+  border: 3px solid #eece1a;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.menu .nav-item {
+  -webkit-transform: translate3d(600px, 0, 0);
+  -webkit-transition: all 0.5s ease-out;
+          transform: translate3d(600px, 0, 0);
+  transition: all 0.5s ease-out;
+}
+
+.menu .nav-item.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu .nav-item.current > a {
+  color: #eece1a;
+}
+
+.menu .nav-link {
+  -webkit-transition: all 0.5s ease-out;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 1rem 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease-out;
+}
+
+.menu .nav-link:hover {
+  color: #eece1a;
+}
+
+.nav-item:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.nav-item:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
