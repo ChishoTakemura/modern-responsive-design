@@ -1,0 +1,19 @@
+//widerscreens
+@include media(xl){
+}
+
+//Desktops & laptops
+@include media(l){
+}
+
+//tablet & small laptops
+@include media(m){
+  main{
+    align-items: center;
+    text-align: center;
+  }
+}
+
+//Smart Phone
+@include media(s){
+}
