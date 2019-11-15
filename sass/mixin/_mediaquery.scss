@@ -1,8 +1,8 @@
 $breakpoints: (
-    xs: "only screen and (max-width: 320px)",
-    s: "only screen and (max-width: 575px)",
-    m: "only screen and (max-width: 767px)",
-    l: "only screen and (max-width: 991px)",
+    xs: "only screen and (max-width: 414px)",//device
+    s: "only screen and (max-width: 568px)",
+    m: "only screen and (max-width: 812px)",
+    l: "only screen and (max-width: 991px)",//tablet
     xl: "only screen and (max-width: 1199px)",
 );
 @mixin media($breakpoint) {

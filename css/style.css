@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #202020;
+  background: #444;
   color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
@@ -18,7 +18,7 @@ body#bg-img {
 }
 
 body#bg-img:after {
-  background: rgba(32, 32, 32, 0.9);
+  background: rgba(68, 68, 68, 0.9);
   content: '';
   height: 100%;
   position: absolute;
@@ -38,7 +38,7 @@ h1.lg-heading, h2.lg-heading, h3.lg-heading {
 }
 
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
-  background: rgba(37, 37, 37, 0.5);
+  background: rgba(73, 73, 73, 0.5);
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
 }
@@ -46,14 +46,6 @@ h1.sm-heading, h2.sm-heading, h3.sm-heading {
 a {
   color: #ffffff;
   text-decoration: none;
-}
-
-@media only screen and (max-width: 767px) {
-  main {
-    -webkit-box-align: center;
-            align-items: center;
-    text-align: center;
-  }
 }
 
 header {
@@ -155,14 +147,14 @@ main#home h1 {
   float: left;
   height: 100vh;
           justify-content: center;
-  overflow: hiden;
+  overflow: hidden;
   width: 50%;
 }
 
 .menu-nav {
   -webkit-transform: translate3d(0, -100%, 0);
   -webkit-transition: all 0.5s ease-out;
-  background: #1f1f1f;
+  background: #373737;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -178,7 +170,7 @@ main#home h1 {
 .menu-branding {
   -webkit-transform: translate3d(0, 100%, 0);
   -webkit-transition: all 0.5s ease-out;
-  background: #202020;
+  background: #444;
           transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
@@ -189,7 +181,7 @@ main#home h1 {
 }
 
 .menu-branding .portrait {
-  background: url("../img/portrait.jpg");
+  background: url("../img/chisho-portrait.jpg");
   border: 3px solid #eece1a;
   border-radius: 50%;
   height: 250px;
@@ -247,4 +239,49 @@ main#home h1 {
 .nav-item:nth-child(4) {
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
+}
+
+@media only screen and (max-width: 812px) {
+  main {
+    -webkit-box-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    min-height: 0;
+    width: 100%;
+  }
+  ul.menu-nav.show,
+  div.menu-branding.show {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+    height: 75vh;
+            transform: translate3d(-100%, 0, 0);
+  }
+  .menu-branding {
+    -webkit-transform: translate3d(100%, 0, 0);
+    height: 25vh;
+            transform: translate3d(100%, 0, 0);
+  }
+  .menu-branding .portrait {
+    background: url("../img/chisho-portrait-small.jpg");
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  main#home h1 {
+    margin-top: 10vh;
+  }
 }

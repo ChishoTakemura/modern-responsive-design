@@ -58,13 +58,13 @@
     float: left;
     width: 50%;
     height: 100vh;
-    overflow: hiden;
+    overflow: hidden;
   }
 
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color,0.5);
+    background: darken($primary-color, 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -89,7 +89,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('../img/portrait.jpg');
+      background: url('../img/chisho-portrait.jpg');
       border-radius: 50%;
       border: 3px solid $secondary-color;
     }
