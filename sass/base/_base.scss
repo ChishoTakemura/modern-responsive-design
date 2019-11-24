@@ -13,19 +13,7 @@ body {
   line-height: 1.5;
 }
 
-// Heading
-h1,h2,h3 {
-  margin: 0;
-  font-weight: 400;
-  &.lg-heading {
-  font-size: 6rem;
-  }
-  &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2),0.5);
-  }
-}
+
 
 
 a {
@@ -71,13 +59,6 @@ a {
   }
 }
 
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-color,10);
-  color: set-text-color($primary-color);
-  height: 60px;
-}
 //Work projects
 .projects {
   display: grid;
